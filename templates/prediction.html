@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>Your Prediction!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body style="background-color:black">
+<div id="maintext" style="position:absolute; margin:auto; width:700px; height:300px; text-align:center; top:0; bottom: 0; left: 0; right: 0;">
+  <h1 class="text-light mb-5"> Your Prediction </h1>
+
+
+  <img src="/{{i_path}}" width="200" height="200">
+
+
+  <table class="table-bordered text-light" style="width:100%">
+  <tr>
+    <th></th>
+    <th>Class</th>
+  </tr>
+  <tr>
+    <td>Most Likely:</td>
+    <td>{{ predictions }}</td>
+  </tr>
+
+  </table>
+<a href="{{ url_for('main_page') }}"><button class="button mt-3">Try again?</button></a>
+</div>
+</body>
+</html>
