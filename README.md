@@ -1,2 +1,4 @@
 ## what the hedhika
-Check demo of the hedhika classifier https://shahukareem.github.io/what-the-hedhika/index.html
+
+A multi class classifier which will classify if an image is either bajiya, boakiba, gulha or masroshi.
+
