@@ -47,8 +47,10 @@ def prediction(filename):
     preds, idx, output = clf.predict(test_image)
     predictions = dict({clf.data.classes[i]: round(to_np(p) * 100, 2) for i, p in enumerate(output) if p > 0.2})
 
-    return flask.render_template('prediction.html', predictions=predictions, i_path=(os.path.join('uploads', filename)).replace(os.sep,"/"))
+    return flask.render_template('prediction.html', predictions=predictions,
+                                 i_path=(os.path.join('uploads', filename)).replace(os.sep, "/"))
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
