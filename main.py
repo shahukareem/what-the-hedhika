@@ -7,7 +7,7 @@ app = FastAPI()
 
 path = os.path.dirname(__file__)
 #check if file exist
-clf = load_learner(path, 'hedhika-classifier.pkl')
+clf = load_learner(path, 'model/hedhika-classifier.pkl')
 
 
 @app.post("/predict")

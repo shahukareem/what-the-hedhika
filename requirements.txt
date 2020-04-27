@@ -1,2 +1,4 @@
-flask==1.1.2
-fastai==1.0.60
+flask
+gunicorn
+https://download.pytorch.org/whl/cpu/torch-1.5.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
+fastai
